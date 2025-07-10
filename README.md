@@ -1,4 +1,4 @@
-📱 MyAppFront — App Segura con Autenticación en React Native
+# 📱 MyAppFront — App Segura con Autenticación en React Native
 
 Aplicación desarrollada como prueba técnica para evaluar competencias en seguridad, arquitectura escalable, patrones de diseño y gestión avanzada de estado en un entorno móvil usando Expo + React Native + TypeScript.
 
