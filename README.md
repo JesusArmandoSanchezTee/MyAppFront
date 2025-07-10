@@ -2,7 +2,8 @@
 
 Aplicación desarrollada como prueba técnica para evaluar competencias en seguridad, arquitectura escalable, patrones de diseño y gestión avanzada de estado en un entorno móvil usando Expo + React Native + TypeScript.
 
-✅ Tecnologías principales
+## ✅ Tecnologías principales
+
 Expo (para facilitar desarrollo y testing multiplataforma)
 
 React Native + TypeScript
@@ -19,7 +20,7 @@ Formik + Yup (validación de formularios)
 
 .NET 8 como backend simulado (no incluido en este repo)
 
-📂 Estructura del Proyecto (Clean Architecture)
+## 📂 Estructura del Proyecto (Clean Architecture)
 
 src/
 ├── api/                     # Acceso a servicios HTTP
@@ -29,6 +30,7 @@ src/
 ├── store/                  # Zustand: estado global
 ├── utils/                  # Validaciones, helpers
 ✅ Capas:
+
 Domain: contiene entidades y definiciones de contratos (User.ts)
 
 Infrastructure: servicios como secureStorage.ts, adaptador de almacenamiento seguro (Patrón Adapter)
@@ -39,7 +41,8 @@ Store: control de estado con Zustand
 
 API: implementación de repositorios (Patrón Repository)
 
-🛡️ Seguridad
+## 🛡️ Seguridad
+
 Almacenamiento seguro del token usando expo-secure-store
 
 Recuperación automática de sesión desde almacenamiento seguro
@@ -50,7 +53,8 @@ Logout seguro con borrado explícito del token
 
 Formulario validado con Formik + Yup
 
-🧠 Patrones de Diseño Aplicados
+## 🧠 Patrones de Diseño Aplicados
+
 Patrón	Uso
 Repository	userRepository.ts abstrae el acceso a la API
 Adapter	secureStorage.ts encapsula expo-secure-store
@@ -58,7 +62,8 @@ Factory (opcional)	Para instanciar clientes HTTP o servicios si fuera necesario
 Dependency Injection	Servicios pasados como parámetros o instanciados modularmente
 Observer	Zustand + listeners para detectar logout/token expiration (si aplica)
 
-⚙️ Estado y datos
+## ⚙️ Estado y datos
+
 📌 TanStack Query
 Usado para login, recuperación de sesión y refetching.
 
@@ -86,14 +91,14 @@ Persistencia opcional con middleware y uso de SecureStore
 
 🧪 Desarrollo y ejecución
 
-# Instalar dependencias
+## Instalar dependencias
 yarn install
 
-# Ejecutar app con Expo
+## Ejecutar app con Expo
 yarn start
 
 
-🔐 Notas técnicas
+## 🔐 Notas técnicas
 
 Se utilizó expo-secure-store por ser compatible directamente con Expo y ofrecer almacenamiento cifrado.
 
